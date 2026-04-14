@@ -7,7 +7,7 @@ export default function Hero() {
         <div>
           <p className="text-zinc-400">Olá, eu sou</p>
           <h1 className="text-5xl font-bold">Daniel Lucas</h1>
-          <h2 className="text-2xl text-zinc-300 mt-2">Desenvolvedor Full Stack</h2>
+          <h2 className="text-2xl text-zinc-300 mt-2">Desenvolvedor em formação</h2>
 
           <p className="text-zinc-400 mt-4">
             Criando projetos web e evoluindo na programação.

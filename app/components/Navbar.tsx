@@ -32,7 +32,7 @@ export default function Navbar() {
                 href="#experiencia"
                 className="rounded-xl px-3 py-1.5 transition hover:bg-white/10 hover:backdrop-blur-sm"
               >
-                Experiência
+                Trajetória
               </a>
             </li>
             <li>
