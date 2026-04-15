@@ -3,8 +3,8 @@ export default function Projetos() {
     {
       nome: "Sistema de Estoque",
       descricao: "Sistema de controle de estoque com login, painel e CRUD.",
-      site: "#",
-      github: "#",
+      site: "https://projeto-frontend-estoque-api-master.vercel.app/Login",
+      github: "https://github.com/danlucas0?tab=repositories",
     },
     {
       nome: "Landing Page",
