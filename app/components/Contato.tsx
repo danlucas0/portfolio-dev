@@ -23,7 +23,7 @@ export default function Contato() {
     },
     {
       nome: "GitHub",
-      valor: "danlucas0",
+      valor: "github.com/danlucas0",
       link: "https://github.com/danlucas0",
       icon: (
         <svg
@@ -56,13 +56,14 @@ export default function Contato() {
   return (
     <section
       id="contato"
-      className="min-h-screen flex items-center px-6 py-28 bg-black"
+      className="min-h-screen bg-black px-6 py-28 text-white"
     >
       <div className="mx-auto w-full max-w-6xl">
-        <div className="mb-12 text-center">
-          <h2 className="text-4xl font-bold">Contato</h2>
+        <div className="mb-14 text-center">
+          <h2 className="text-4xl font-bold">Vamos trabalhar juntos</h2>
           <p className="mt-4 text-zinc-400">
-            Vamos trocar uma ideia ou trabalhar juntos?
+            Estou aberto a oportunidades, freelas e projetos. Entre em contato
+            comigo.
           </p>
         </div>
 

@@ -13,13 +13,15 @@ export default function Skills() {
 
   const dados = ["SQL", "MySQL", "Workbench"];
 
-  const ferramentas = ["Git", "GitHub"];
-
+  const ferramentas = ["Git", "GitHub", "VS Code", "Thunder Client"];
 
   return (
-    <section id="skills" className="min-h-screen flex items-center px-6 py-28 bg-black">
+    <section
+      id="skills"
+      className="min-h-screen bg-black px-6 py-28 text-white"
+    >
       <div className="mx-auto w-full max-w-6xl">
-        <div className="mb-12 text-center">
+        <div className="mb-14 text-center">
           <h2 className="text-4xl font-bold">Skills</h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-zinc-400">
             Tecnologias e ferramentas que venho utilizando para desenvolver
@@ -28,7 +30,6 @@ export default function Skills() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          {/* FRONT-END */}
           <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.06)]">
             <div className="mb-8">
               <h3 className="text-3xl font-semibold text-white">Front-end</h3>
@@ -42,7 +43,7 @@ export default function Skills() {
               {frontend.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-zinc-200 transition duration-300 hover:scale-105 hover:border-white/20 hover:bg-white/[0.08]"
+                  className="rounded-full border border-white/10 bg-gradient-to-r from-white/10 to-white/5 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:border-white/20"
                 >
                   {skill}
                 </span>
@@ -50,12 +51,12 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* BACK-END */}
           <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.06)]">
             <div className="mb-8">
               <h3 className="text-3xl font-semibold text-white">Back-end</h3>
               <p className="mt-3 text-zinc-400">
-                Construção de APIs e organização da lógica do sistema.
+                Construção de APIs, regras de negócio e organização da lógica do
+                sistema.
               </p>
             </div>
 
@@ -63,7 +64,7 @@ export default function Skills() {
               {backend.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-zinc-200 transition duration-300 hover:scale-105 hover:border-white/20 hover:bg-white/[0.08]"
+                  className="rounded-full border border-white/10 bg-gradient-to-r from-white/10 to-white/5 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:border-white/20"
                 >
                   {skill}
                 </span>
@@ -71,12 +72,12 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* DADOS */}
           <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.06)]">
             <div className="mb-8">
               <h3 className="text-3xl font-semibold text-white">Dados</h3>
               <p className="mt-3 text-zinc-400">
-                Consultas, modelagem e manipulação de dados em sistemas.
+                Consultas, modelagem e manipulação de dados em aplicações e
+                sistemas.
               </p>
             </div>
 
@@ -84,7 +85,7 @@ export default function Skills() {
               {dados.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-zinc-200 transition duration-300 hover:scale-105 hover:border-white/20 hover:bg-white/[0.08]"
+                  className="rounded-full border border-white/10 bg-gradient-to-r from-white/10 to-white/5 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:border-white/20"
                 >
                   {skill}
                 </span>
@@ -92,12 +93,12 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* FERRAMENTAS */}
           <div className="group rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.06)]">
             <div className="mb-8">
               <h3 className="text-3xl font-semibold text-white">Ferramentas</h3>
               <p className="mt-3 text-zinc-400">
-                Recursos que ajudam na organização e versionamento dos projetos.
+                Recursos que ajudam na produtividade, versionamento e testes dos
+                projetos.
               </p>
             </div>
 
@@ -105,7 +106,7 @@ export default function Skills() {
               {ferramentas.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-zinc-200 transition duration-300 hover:scale-105 hover:border-white/20 hover:bg-white/[0.08]"
+                  className="rounded-full border border-white/10 bg-gradient-to-r from-white/10 to-white/5 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:border-white/20"
                 >
                   {skill}
                 </span>
