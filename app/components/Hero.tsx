@@ -12,6 +12,8 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-2">
+        
+        {/* TEXTO */}
         <div>
           <p className="text-sm text-zinc-500">Olá, eu sou</p>
 
@@ -44,18 +46,28 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* FOTO COM GLOW */}
         <div className="flex justify-center">
-          <div className="relative h-[350px] w-[280px] overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] shadow-[0_20px_80px_rgba(255,255,255,0.06)] md:h-[400px] md:w-[320px]">
-            <Image
-              src="/ney.jpg"
-              alt="Daniel Lucas"
-              fill
-              className="object-cover object-center grayscale"
-              sizes="(max-width: 768px) 280px, 320px"
-              priority
-            />
+          <div className="relative">
+
+            {/* GLOW SUAVE */}
+            <div className="absolute -inset-6 bg-white/20 blur-2xl opacity-60 rounded-3xl" />
+
+            {/* IMAGEM */}
+            <div className="relative h-[350px] w-[280px] overflow-hidden rounded-3xl md:h-[400px] md:w-[320px]">
+              <Image
+                src="/ney.jpg"
+                alt="Daniel Lucas"
+                fill
+                className="object-cover object-center grayscale"
+                sizes="(max-width: 768px) 280px, 320px"
+                priority
+              />
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );
