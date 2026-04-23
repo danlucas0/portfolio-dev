@@ -76,7 +76,7 @@ export default function Contato() {
               rel="noopener noreferrer"
               className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)]"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-white">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.05] text-white">
                 {item.icon}
               </div>
 

@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projetos from "./components/Projetos";
-import Experiencia from "./components/Trajetoria";
+import Trajetoria from "./components/Trajetoria";
 import Skills from "./components/Skills";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
+import MusicToggle from "./components/MusicToggle";
 
 export default function Home() {
   return (
@@ -12,10 +13,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Projetos />
-      <Experiencia />
+      <Trajetoria />
       <Skills />
       <Contato />
       <Footer />
+      <MusicToggle />
     </main>
   );
 }

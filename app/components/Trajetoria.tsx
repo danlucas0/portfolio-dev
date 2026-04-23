@@ -1,4 +1,4 @@
-export default function Experiencia() {
+export default function Trajetoria() {
   const experiencias = [
     {
       titulo: "SENAI - Desenvolvimento de Sistemas",
@@ -27,7 +27,7 @@ export default function Experiencia() {
     >
       <div className="mx-auto w-full max-w-5xl">
         <div className="mb-16 text-center">
-          <h2 className="text-4xl font-bold">Minha trajetória</h2>
+          <h2 className="text-4xl font-bold">Minha trajetória até aqui</h2>
           <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
             Formação, aprendizado técnico e prática constante construindo minha
             evolução na área de tecnologia.
@@ -35,7 +35,7 @@ export default function Experiencia() {
         </div>
 
         <div className="relative ml-2 border-l border-white/10 pl-8">
-          {experiencias.map((item, index) => (
+          {experiencias.map((item) => (
             <div key={item.titulo} className="relative pb-12 last:pb-0">
               <span className="absolute -left-[41px] top-1 flex h-5 w-5 items-center justify-center rounded-full border border-white/20 bg-white"></span>
 

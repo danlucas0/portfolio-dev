@@ -4,11 +4,14 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="min-h-screen bg-black px-6 pt-32 pb-20 text-white"
+      className="relative min-h-screen overflow-hidden bg-black px-6 pt-32 pb-20 text-white"
     >
-      <div className="mx-auto grid max-w-6xl items-center gap-14 md:grid-cols-2">
-        
-        {/* TEXTO */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-[8%] top-[18%] h-56 w-56 rounded-full bg-white/[0.04] blur-3xl" />
+        <div className="absolute right-[10%] bottom-[15%] h-72 w-72 rounded-full bg-white/[0.03] blur-3xl" />
+      </div>
+
+      <div className="mx-auto grid max-w-6xl items-center gap-16 md:grid-cols-2">
         <div>
           <p className="text-sm text-zinc-500">Olá, eu sou</p>
 
@@ -24,7 +27,7 @@ export default function Hero() {
             Criando projetos web e evoluindo na programação.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#projetos"
               className="rounded-xl bg-white px-6 py-3 font-semibold text-black transition hover:scale-105 hover:bg-zinc-200"
@@ -41,22 +44,18 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* IMAGEM */}
         <div className="flex justify-center">
-          <div className="relative w-[280px] h-[350px] md:w-[320px] md:h-[400px] rounded-3xl overflow-hidden border border-white/10 bg-white/[0.03] shadow-[0_20px_80px_rgba(255,255,255,0.06)]">
-            
+          <div className="relative h-[350px] w-[280px] overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] shadow-[0_20px_80px_rgba(255,255,255,0.06)] md:h-[400px] md:w-[320px]">
             <Image
-              src="/minha-foto.jpg"
+              src="/ney.jpg"
               alt="Daniel Lucas"
               fill
-              className="object-cover object-center"
+              className="object-cover object-center grayscale"
               sizes="(max-width: 768px) 280px, 320px"
               priority
             />
-
           </div>
         </div>
-
       </div>
     </section>
   );

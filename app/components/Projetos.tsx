@@ -24,7 +24,7 @@ export default function Projetos() {
         "Aplicação que consome API externa de gatos, exibindo imagens dinâmicas com foco em UX, responsividade e integração com serviços REST.",
       site: "https://cat-gallery-premium.vercel.app",
       github: "https://github.com/danlucas0",
-      imagem: "/gatos.png",
+      imagem: "/gatos1.png",
       stack: ["Next.js", "API REST", "Tailwind", "UX/UI"],
     },
   ];
@@ -43,13 +43,12 @@ export default function Projetos() {
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-3">
           {projetos.map((proj) => (
             <div
               key={proj.nome}
-              className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.06)]"
+              className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.05)]"
             >
-              {/* IMAGEM */}
               <div className="relative h-56 w-full overflow-hidden border-b border-white/10 bg-zinc-900">
                 <img
                   src={proj.imagem}
@@ -58,9 +57,7 @@ export default function Projetos() {
                 />
               </div>
 
-              {/* CONTEÚDO */}
               <div className="p-6">
-                {/* STACK */}
                 <div className="mb-4 flex flex-wrap gap-2">
                   {proj.stack.map((item) => (
                     <span
@@ -72,17 +69,12 @@ export default function Projetos() {
                   ))}
                 </div>
 
-                {/* NOME */}
-                <h3 className="mb-3 text-2xl font-semibold">
-                  {proj.nome}
-                </h3>
+                <h3 className="mb-3 text-2xl font-semibold">{proj.nome}</h3>
 
-                {/* DESCRIÇÃO */}
                 <p className="mb-6 leading-relaxed text-zinc-400">
                   {proj.descricao}
                 </p>
 
-                {/* BOTÕES */}
                 <div className="flex flex-wrap gap-3">
                   <a
                     href={proj.site}
