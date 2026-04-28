@@ -9,9 +9,34 @@ export default function Skills() {
     "Tailwind CSS",
   ];
 
-  const backend = ["Node.js", "NestJS"];
-  const dados = ["SQL", "MySQL", "Workbench"];
-  const ferramentas = ["Git", "GitHub", "VS Code", "Thunder Client"];
+  const backend = [
+    "Node.js",
+    "NestJS",
+    "Express",
+    "JWT",
+    "REST APIs",
+  ];
+
+  const dados = [
+    "MySQL",
+    "SQL",
+    "Prisma",
+    "TypeORM",
+  ];
+
+  const ferramentas = [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Thunder Client",
+  ];
+
+  const cloud = [
+    "Vercel",
+    "Render",
+    "TiDB Cloud",
+    "Google Cloud",
+  ];
 
   const grupos = [
     {
@@ -23,20 +48,26 @@ export default function Skills() {
     {
       titulo: "Back-end",
       descricao:
-        "Construção de APIs, regras de negócio e organização da lógica do sistema.",
+        "Construção de APIs, autenticação e lógica de negócio para aplicações.",
       items: backend,
     },
     {
       titulo: "Dados",
       descricao:
-        "Consultas, modelagem e manipulação de dados em aplicações e sistemas.",
+        "Modelagem, consultas e persistência de dados em aplicações full-stack.",
       items: dados,
     },
     {
       titulo: "Ferramentas",
       descricao:
-        "Recursos que ajudam na produtividade, versionamento e testes dos projetos.",
+        "Ferramentas para versionamento, testes e produtividade no desenvolvimento.",
       items: ferramentas,
+    },
+    {
+      titulo: "Cloud / Deploy",
+      descricao:
+        "Plataformas utilizadas para deploy, hospedagem e banco de dados em nuvem.",
+      items: cloud,
     },
   ];
 
@@ -47,24 +78,30 @@ export default function Skills() {
     >
       <div className="mx-auto w-full max-w-6xl">
         <div className="mb-14 text-center">
-          <h2 className="text-4xl font-bold">Skills</h2>
+          <h2 className="text-4xl font-bold">
+            Skills
+          </h2>
+
           <p className="mx-auto mt-5 max-w-2xl text-lg text-zinc-400">
             Tecnologias e ferramentas que venho utilizando para desenvolver
-            interfaces, APIs e projetos práticos.
+            interfaces, APIs e projetos full-stack.
           </p>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {grupos.map((grupo) => (
             <div
               key={grupo.titulo}
               className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-white/20 hover:shadow-[0_20px_80px_rgba(255,255,255,0.05)]"
             >
               <div className="mb-8">
-                <h3 className="text-3xl font-semibold text-white">
+                <h3 className="text-3xl font-semibold">
                   {grupo.titulo}
                 </h3>
-                <p className="mt-3 text-zinc-400">{grupo.descricao}</p>
+
+                <p className="mt-3 text-zinc-400">
+                  {grupo.descricao}
+                </p>
               </div>
 
               <div className="flex flex-wrap gap-3">

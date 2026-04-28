@@ -1,14 +1,25 @@
 export default function Projetos() {
   const projetos = [
     {
+      nome: "FutPanel",
+      descricao:
+        "Sistema para gestão de partidas de futsal com sorteio de equipes, placar em tempo real e ranking de jogadores.",
+      site: "https://futpanel.vercel.app/login",
+      github: "https://github.com/danlucas0",
+      imagem: "/fut.png",
+      stack: ["Next.js", "Prisma", "JWT", "TypeScript"],
+    },
+
+    {
       nome: "Sistema de Estoque",
       descricao:
-        "Sistema completo com autenticação, painel administrativo, controle de produtos e operações de CRUD.",
+        "Sistema de estoque com login, controle de produtos, movimentações e painel administrativo.",
       site: "https://projeto-frontend-estoque-api-master.vercel.app/Login",
       github: "https://github.com/danlucas0",
       imagem: "/estoque.png",
-      stack: ["Next.js", "NestJS", "MySQL", "Tailwind"],
+      stack: ["Next.js", "NestJS", "MySQL", "JWT"],
     },
+
     {
       nome: "Sistema de Restaurante",
       descricao:
@@ -16,8 +27,19 @@ export default function Projetos() {
       site: "https://ap-is-res-tful-with-java-script-tau.vercel.app/",
       github: "https://github.com/danlucas0",
       imagem: "/restaurante.png",
-      stack: ["JavaScript", "Node.js", "Express", "UI Responsiva"],
+      stack: ["REST API", "Express", "MySQL", "JWT"],
     },
+
+    {
+      nome: "E-commerce",
+      descricao:
+        "E-commerce integrado com API de produtos, carrinho de compras e busca automática de endereço por CEP.",
+      site: "https://api-store-cart-frete.vercel.app/",
+      github: "https://github.com/danlucas0",
+      imagem: "/loja.png",
+      stack: ["Next.js", "Tailwind", "Cart State", "CEP API"],
+    },
+
     {
       nome: "Cat Gallery API",
       descricao:
@@ -25,7 +47,7 @@ export default function Projetos() {
       site: "https://cat-gallery-premium.vercel.app",
       github: "https://github.com/danlucas0",
       imagem: "/gatos1.png",
-      stack: ["Next.js", "API REST", "Tailwind", "UX/UI"],
+      stack: ["Next.js", "TheCatAPI", "Tailwind", "React"],
     },
   ];
 
@@ -37,6 +59,7 @@ export default function Projetos() {
       <div className="mx-auto w-full max-w-6xl">
         <div className="mb-14 text-center">
           <h2 className="text-4xl font-bold">Projetos</h2>
+
           <p className="mx-auto mt-4 max-w-2xl text-zinc-400">
             Alguns dos projetos que venho desenvolvendo para praticar
             front-end, back-end, integração com APIs e experiência do usuário.
@@ -69,7 +92,9 @@ export default function Projetos() {
                   ))}
                 </div>
 
-                <h3 className="mb-3 text-2xl font-semibold">{proj.nome}</h3>
+                <h3 className="mb-3 text-2xl font-semibold">
+                  {proj.nome}
+                </h3>
 
                 <p className="mb-6 leading-relaxed text-zinc-400">
                   {proj.descricao}
