@@ -3,7 +3,7 @@ export default function Projetos() {
     {
       nome: "FutPanel",
       descricao:
-        "Sistema para gestão de partidas de futsal com sorteio de equipes, placar em tempo real e ranking de jogadores.",
+        "Desenvolvi uma aplicação para organizar partidas de futsal com sorteio de equipes, placar em tempo real e ranking de jogadores.",
       site: "https://futpanel.vercel.app/login",
       github: "https://github.com/danlucas0",
       imagem: "/fut.png",
@@ -13,7 +13,7 @@ export default function Projetos() {
     {
       nome: "Sistema de Estoque",
       descricao:
-        "Sistema de estoque com login, controle de produtos, movimentações e painel administrativo.",
+        "Desenvolvi sistema de estoque com autenticação e controle de movimentações para gerenciamento de produtos.",
       site: "https://projeto-frontend-estoque-api-master.vercel.app/Login",
       github: "https://github.com/danlucas0",
       imagem: "/estoque.png",
@@ -23,7 +23,7 @@ export default function Projetos() {
     {
       nome: "Sistema de Restaurante",
       descricao:
-        "Sistema com login, pedidos por mesa ou entrega, escolha de pagamento e fluxo de atendimento integrado.",
+        "Desenvolvi sistema para gerenciamento de pedidos e comandas em restaurante com fluxo integrado de atendimento.",
       site: "https://ap-is-res-tful-with-java-script-tau.vercel.app/",
       github: "https://github.com/danlucas0",
       imagem: "/restaurante.png",
@@ -33,7 +33,7 @@ export default function Projetos() {
     {
       nome: "E-commerce",
       descricao:
-        "E-commerce integrado com API de produtos, carrinho de compras e busca automática de endereço por CEP.",
+        "Desenvolvi e-commerce com catálogo dinâmico, carrinho e preenchimento automático por CEP.",
       site: "https://api-store-cart-frete.vercel.app/",
       github: "https://github.com/danlucas0",
       imagem: "/loja.png",
@@ -43,7 +43,7 @@ export default function Projetos() {
     {
       nome: "Cat Gallery API",
       descricao:
-        "Aplicação que consome API externa de gatos, exibindo imagens dinâmicas com foco em UX, responsividade e integração com serviços REST.",
+        "Desenvolvi aplicação integrada com API externa para busca e exibição dinâmica de imagens e informações de gatos.",
       site: "https://cat-gallery-premium.vercel.app",
       github: "https://github.com/danlucas0",
       imagem: "/gatos1.png",
