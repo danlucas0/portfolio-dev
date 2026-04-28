@@ -13,7 +13,7 @@ export default function Projetos() {
     {
       nome: "Sistema de Estoque",
       descricao:
-        "Desenvolvi sistema de estoque com autenticação e controle de movimentações para gerenciamento de produtos.",
+        "Desenvolvi um sistema de estoque com autenticação e controle de movimentações para gerenciamento de produtos.",
       site: "https://projeto-frontend-estoque-api-master.vercel.app/Login",
       github: "https://github.com/danlucas0",
       imagem: "/estoque.png",
@@ -23,7 +23,7 @@ export default function Projetos() {
     {
       nome: "Sistema de Restaurante",
       descricao:
-        "Desenvolvi sistema para gerenciamento de pedidos e comandas em restaurante com fluxo integrado de atendimento.",
+        "Desenvolvi um sistema para gerenciamento de pedidos e comandas em restaurante com fluxo integrado de atendimento.",
       site: "https://ap-is-res-tful-with-java-script-tau.vercel.app/",
       github: "https://github.com/danlucas0",
       imagem: "/restaurante.png",
@@ -33,7 +33,7 @@ export default function Projetos() {
     {
       nome: "E-commerce",
       descricao:
-        "Desenvolvi e-commerce com catálogo dinâmico, carrinho e preenchimento automático por CEP.",
+        "Desenvolvi um e-commerce com catálogo dinâmico, carrinho e preenchimento automático por CEP.",
       site: "https://api-store-cart-frete.vercel.app/",
       github: "https://github.com/danlucas0",
       imagem: "/loja.png",
@@ -43,7 +43,7 @@ export default function Projetos() {
     {
       nome: "Cat Gallery API",
       descricao:
-        "Desenvolvi aplicação integrada com API externa para busca e exibição dinâmica de imagens e informações de gatos.",
+        "Desenvolvi uma aplicação integrada com API externa para busca e exibição dinâmica de imagens e informações de gatos.",
       site: "https://cat-gallery-premium.vercel.app",
       github: "https://github.com/danlucas0",
       imagem: "/gatos1.png",
